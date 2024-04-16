@@ -1,11 +1,57 @@
 *{
     margin: auto;
-    padding-top: 2%;
+   margin-top: 2%;
 }
 
 .box{
 
-    width: 70vw;
-    height: 80dvh;
+    width: 800px;
+    height: 500px;
     border: 1px solid black;
+   overflow: hidden;
+    position: relative;
+}
+
+.slide{
+  
+    width: 100%;
+   margin: 0;
+   height: 100%;
+   display: flex;
+   transition:1s ease;
+}
+.image{
+    height:100%;
+    margin: 0;
+    width:100%;
+
+ 
+ object-fit: cover;
+
+}
+.box button{
+    font-size: 25px;
+  
+    position: absolute;
+    top: 40%;
+    background: none;
+    cursor: pointer;
+    color: aliceblue;
+    border: none;
+}
+.right{
+    right: 0;
+}
+
+.gol{
+    display: flex;
+    width:200px;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
 }
