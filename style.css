@@ -1,0 +1,11 @@
+*{
+    margin: auto;
+    padding-top: 2%;
+}
+
+.box{
+
+    width: 70vw;
+    height: 80dvh;
+    border: 1px solid black;
+}
