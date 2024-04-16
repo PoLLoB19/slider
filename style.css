@@ -5,15 +5,16 @@
 }
 
 body{
-    background-color: rgb(250, 255, 246);
+    background-color: rgb(202, 224, 202);
 }
 .box {
   width: 800px;
   height: 500px;
-  border: 1px solid black;
+
   overflow: hidden;
   position: relative;
   box-shadow: 7px 10px 25px black;
+   border-radius: 25px;
 }
 
 .slide {
@@ -23,6 +24,7 @@ body{
   display: flex;
   transition: 1s ease;
   position: relative;
+ 
 }
 .image {
   height: 100%;
@@ -30,6 +32,7 @@ body{
   width: 100%;
 
   object-fit: cover;
+  cursor: pointer;
 }
 
 .box button{

@@ -69,3 +69,31 @@ left.addEventListener("click", ()=>{
     change();
 });
 
+
+const slideshow= ()=>{
+  start = setInterval(() => {
+    forward();
+change()
+  }, 3000);
+
+}
+
+function stopslide(){
+    clearInterval(start);
+}
+
+right.addEventListener('mouseover',stopslide);
+right.addEventListener('mouseout',slideshow);
+left.addEventListener('mouseover',stopslide);
+left.addEventListener('mouseout',slideshow);
+buttons.forEach((items)=>{
+    items.addEventListener('mouseover',stopslide);
+})
+buttons.forEach((items)=>{
+    items.addEventListener('mouseout',slideshow);
+})
+
+slider.addEventListener('mouseover',stopslide);
+slider.addEventListener('mouseout',slideshow);
+
+slideshow();
