@@ -1,57 +1,66 @@
-*{
-    margin: auto;
-   margin-top: 2%;
-}
-
-.box{
-
-    width: 800px;
-    height: 500px;
-    border: 1px solid black;
-   overflow: hidden;
-    position: relative;
-}
-
-.slide{
-  
-    width: 100%;
-   margin: 0;
-   height: 100%;
-   display: flex;
-   transition:1s ease;
-}
-.image{
-    height:100%;
-    margin: 0;
-    width:100%;
-
- 
- object-fit: cover;
+* {
+  margin: auto;
+  margin-top: 2%;
 
 }
+
+body{
+    background-color: rgb(250, 255, 246);
+}
+.box {
+  width: 800px;
+  height: 500px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 7px 10px 25px black;
+}
+
+.slide {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  transition: 1s ease;
+  position: relative;
+}
+.image {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+
+  object-fit: cover;
+}
+
 .box button{
+     
     font-size: 25px;
-  
-    position: absolute;
-    top: 40%;
-    background: none;
-    cursor: pointer;
-    color: aliceblue;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
     border: none;
+  background: none;
+  color: rgb(243, 236, 224);
 }
-.right{
-    right: 0;
+.box button:hover{
+    background-color: rgb(221, 166, 13);
+    transition: 0.5s ease;
+}
+.right {
+  right: 0;
+ 
+ 
 }
 
-.gol{
-    display: flex;
-    width:200px;
+.gol {
+  display: flex;
+  width: 200px;
 }
 
-.circle{
-    height: 15px;
-    width: 15px;
-    border: 1px solid black;
-    border-radius: 50%;
-    cursor: pointer;
+.circle {
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
 }

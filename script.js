@@ -29,6 +29,12 @@ buttons.forEach((items)=>{
     });
 
 })
+
+function change (){
+    reset();
+    buttons[i-1].style.backgroundColor='black';
+}
+
 function forward(){
      if (i < image.length) {
     slider.style.transform = `translateX(-${i * 100}%)`;
@@ -41,7 +47,10 @@ function forward(){
   }
 }
 
-right.addEventListener("click", forward);
+right.addEventListener("click", ()=>{
+ forward();
+ change()
+});
 
 function back(){
       if (i > 1) {
@@ -55,5 +64,8 @@ function back(){
   }
 }
 
-left.addEventListener("click", back);
+left.addEventListener("click", ()=>{
+    back();
+    change();
+});
 
