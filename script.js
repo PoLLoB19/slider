@@ -74,7 +74,7 @@ const slideshow= ()=>{
   start = setInterval(() => {
     forward();
 change()
-  }, 3000);
+  }, 5000);
 
 }
 
